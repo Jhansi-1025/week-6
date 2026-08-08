@@ -9,7 +9,7 @@ public class Factorial{
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+       // Scanner scanner = new Scanner(System.in);
         
             long result = calculate(5);
             System.out.println("Factorial of 5" + " is: " + result);
