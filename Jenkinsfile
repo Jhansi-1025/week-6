@@ -4,7 +4,7 @@ pipeline {
         stage('Compile') {
             steps {
                 echo "Compile"
-                bat 'javac factorial.java test_factorial.java'
+                bat 'javac Factorial.java test_factorial.java'
             }
         }
         stage('Test'){
@@ -16,13 +16,13 @@ pipeline {
         stage('Run'){
             steps{
                 echo "Run"
-                bat 'java factorial'
+                bat 'java Factorial'
             }
         }
         stage('Package JAR'){
             steps{
                 echo "Build"
-                bat 'jar cfm factorial.jar manifest.txt factorial.class'
+                bat 'jar cfm factorial.jar manifest.txt Factorial.class'
             }
         }
         stage('Archive JAR'){
